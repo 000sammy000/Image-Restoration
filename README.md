@@ -4,8 +4,9 @@ StudentID: 110550142
 Name:黃芷柔
 
 ## Introduction
-In this project, we tackle the joint deraining and desnowing task using a pure vision-based model, without any pretrained weights or external datasets. Our approach is based on PromptIR, a prompt- guided restoration framework originally designed to adaptively inject learned priors into the reconstruction process. To reduce training resource consumption and accelerate convergence, we simplify the original architecture by reducing the number of prompt injection layers and decreasing overall model depth. These modifications also help us comply with the strict model size constraint, enabling effective training from scratch within limited computational resources.  
-We implement the entire training and evaluation pipeline using PyTorch, and adopt PSNR as the primary evaluation metric. This report presents our design choices, the modified PromptIR-based model architecture, and a detailed analysis of its performance under strict learning conditions.
+In this project, we tackle the joint deraining and desnowing task using a pure vision-based model, without any pretrained weights or external datasets. Our approach is based on PromptIR [1], a prompt- guided restoration framework originally designed to adaptively inject learned priors into the reconstruction process. To reduce training resource consumption and accelerate convergence, we simplify the original architecture by reducing the number of prompt injection layers and decreasing overall model depth.
+We implement the entire training and evaluation pipeline using PyTorch [2], and adopt PSNR as the primary evaluation metric [3].
+
 
 ## How to install
 You can run this project directly in your browser using Google Colab. No local setup is needed.
